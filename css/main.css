@@ -173,7 +173,7 @@ p {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.125em;
-  margin: 2em;
+  margin-bottom:3em;
 }
 
 .bio-info img {
@@ -276,11 +276,13 @@ footer .social-links {
   list-style: none;
   text-align: left;
   padding: 1em;
+  margin-right: 6.1em;
 }
 .menu li {
   display: block;
   padding: 0.5em;
   margin-top: 5px;
+  margin-left:1.5em;
 }
 
 .menu li a {
@@ -290,21 +292,40 @@ footer .social-links {
 
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
+  
   .social-links {
     margin-top: 0em;
     
   }
-  input[type=submit]{
-
-    width:50%;
+  .contact{
+    width:100%;
   }
+  .big-hero p {
+    font-size: 1em;
+  }
+  .post article p,.about label {
+    font-size: 1.5em;
+  }
+  .post article h3{
+    font-size: 3em;}
+
+  .about h2,.post h2{
+    font-size: 2em;
+  }
+
   input[type=text]{
 
-    width:600px;
+    width:100%;
   }
 
-  .fab,.fas{
+  .fab{
     font-size:75px;
+    margin-left: 20px;
+    margin-right:20px;
+  }
+  .fas{
+    font-size: 70px;
+    margin-top:0.3em;
   }
 
   .container a{
@@ -329,12 +350,13 @@ footer .social-links {
 
   .post ul li h3 {
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 2em;
   }
 
   .logo {
-    width: 150px;
-    margin: 1.5em;
+    width: 120px;
+    margin-left:4.9em;
+    margin-top:0;
   }
 
   .show-desktop {
@@ -352,14 +374,27 @@ footer .social-links {
     width: auto;
     height: auto;
     display: flex;
-    margin-top: 1em;
-  }
+    font-size:2.5em;
+    margin-right:1.5em;
+    margin-top:0;
+    padding:0;}
 
-  /*TODO: FALTA CSS */
+   
 }
 
 @media only screen and (min-width: 1024px) {
   /*TODO: FALTA CSS */
+  input[type=submit]{
+
+    width:50%;
+  }
+  .post ul li p {
+    font-size:1em;
+  }
+  .logo {
+    width: 150px;
+    margin-top:0;
+  }
   .about .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -369,6 +404,9 @@ footer .social-links {
     max-width: 1440px;
     justify-items: center;
     align-items: center;
+  }
+  .fas{
+      margin-top:0;
   }
   .about .container h2 {
 
@@ -391,5 +429,15 @@ footer .social-links {
     width: 100%;
     margin: 0 auto;
     max-width: 1440px;
+  }
+  .about img{
+    width:400px;
+  }
+  .logo,.big-hero img {
+    width: 200px;
+  }
+  .post ul li h3 {
+    font-weight: bold;
+    font-size: 1.3em;
   }
 }
