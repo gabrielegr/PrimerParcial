@@ -12,6 +12,7 @@
 }
 
 /* El estilo base para moviles */
+/* Estilo general  body*/
 body {
   background-color: #112935;
   color: white;
@@ -19,39 +20,36 @@ body {
   text-align: center;
   font-weight: 400;
 }
-
+/*Agregando flex a container de menu de header*/
 .header {
   display: flex;
   justify-content: space-between;
 }
-
-nav li a:hover{
-  color:red;
-}
-
+/*Escondiendo informacion que el usuario no vera*/
 .src-only {
   display: none;
 }
+/*Escondiendo menu para pc/tablet e version movil*/
 
 .hide-mobile {
   display: none;
 }
-
+/*Estilo parrafos en general*/
 p {
   font-size: 0.75em;
   padding: 1rem;
   line-height: 25px;
 }
-
+/* Estilo parrafos seccion "Acerda De"*/
 .about p{
   text-align: justify;
 }
-
+/*Parametros del logo principal*/
 .logo {
   width: 90px;
   margin: 1em;
 }
-
+/*Parametros de menu movil*/
 .options {
   color: inherit;
   text-decoration: none;
@@ -69,23 +67,34 @@ p {
 }
 
 /* Big area */
+/* Tamaño de fotografia propietario*/
 .big-hero img {
   width: 150px;
 }
 
+/* Tamaño iconos redes soaciales*/
+.fab,.fas{
+  font-size:40px;
+}
+/* Tamaño icono flecha header*/
+.fas{
+  color:#0ac693;
+}
+/* Estilo subtitulo bajo fotografia propietario*/
 .big-hero h2 {
   font-size: 1.875em;
   font-weight: 700;
   letter-spacing: 0.002em;
   margin-top: 1em;
 }
-
+/*Estilo general parrafos en header */
 .big-hero p {
   font-size: 0.7em;
   color: #d7dee6;
 }
 
 /* Social links*/
+/* Estilo general de iconos de redes sociales*/
 .social-links {
   list-style: none;
   padding: 0;
@@ -95,7 +104,7 @@ p {
   flex-direction: row;
   justify-content: center;
 }
-
+/* Estilo especifico a los links del header*/
 .social-links li a {
   color: #d7dee6;
   text-decoration: none;
@@ -103,35 +112,36 @@ p {
   margin-left: 15px;
   margin-right: 15px;
 }
-
+/* color de fondo para area de publicaciones */
 .green-area {
   background-color: #0ac693;
 }
-
+/* Posisiconando area de publicaciones*/
 .post {
   padding: 1em;
   margin-bottom: -2px;
 }
+/*  estilo titulo area de publicaciones */
 .post h2 {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.125em;
   margin: 1em;
 }
-
+/* Agregando flex a contenedor publicaciones*/
 .post ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
 }
-
+/* Tamaño de publicaciones*/
 .post ul li {
   min-height: 300px;
   max-width: 350px;
   margin: 2rem auto;
 }
-
+/* Posicionando publicaciones */
 .post ul li article {
   overflow: hidden;
   border-radius: 10px;
@@ -139,13 +149,13 @@ p {
   text-align: left;
   padding-bottom: 2em;
 }
-
+/* Tamaño imagenes publicaciones*/
 .post article img {
   height: 150px;
   width: 100%;
   object-fit: cover;
 }
-
+/* Tamaño titlos publicaciones*/
 .post article h3 {
   color: #0d5061;
   margin-top: 2em;
@@ -155,7 +165,7 @@ p {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
+/* Estilo parrafo publicaciones */
 .post article p {
   color: #112935;
   font-size: 0.75em;
@@ -164,22 +174,22 @@ p {
 }
 
 /* About */
-
+/* Posicion area acerca de*/
 .about {
   margin-top: 2em;
 }
-
+/* Estilo titulo area acerca de */
 .about h2 {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.125em;
   margin-bottom:3em;
 }
-
+/* Estilo logo area acerca de*/
 .bio-info img {
   width: 200px;
 }
-
+/* Estilo biografia biografia area acerca de */
 .bio-info p {
   font-size: 16px;
   padding: 2em;
@@ -187,32 +197,24 @@ p {
   line-height: 25px;
   letter-spacing: 2px;
 }
-
+/* Estilo general contenedor de contacto*/
 .contact {
   display: flex;
   flex-direction: column;
   text-align: left;
   padding: 0px 1em;
 }
-
+/* Margen de contacto*/
 .contact * + * {
   margin-top: 1.5em;
 }
-
-.fab,.fas{
-  font-size:40px;
-}
-
-.fas{
-  color:#0ac693;
-}
-
+/* Agregando flex formulario contacto*/
 .contact-form {
   margin:1.5em;  
   display: flex;
   flex-direction: column;
 }
-
+/*Tamaño de elementos en formulario contacto*/
 .contact-form input,
 .contact-form textarea {
   padding: 1rem 2rem;
@@ -223,7 +225,7 @@ p {
 }
 
 /* Decorando placeholder */
-
+/* Texto por defecto formulario contacto*/
 ::-webkit-input-placeholder {
   color: #d7dee6;
 }
@@ -241,36 +243,26 @@ p {
 :-ms-input-placeholder {
   color: #d7dee6;
 }
-
+/* Estilo boton formulario contacto*/
 .contact-form input[type="submit"] {
   background-color: #f74442;
   font-weight: 400;
   color: white;
   font-size: 1rem;
 }
-
 .black-decoration {
   background-image: url("../images/decoracion_oscura_small.svg");
 }
-
+/* Fondo footer*/
 footer {
   background-color: #0d5061;
   color: #d7dee6;
 }
-
+/* Margen links redes sociales footer*/
 footer .social-links {
   margin: 0;
 }
-
-.menu {
-  background-color: #112935;
-  position: absolute;
-  z-index: 20;
-  top: 60px;
-  right: 0;
-  width: 100vw;
-  height: calc(100vh - 60px);
-}
+/* Estilo menu tablet pc*/
 
 .menu {
   list-style: none;
@@ -278,13 +270,14 @@ footer .social-links {
   padding: 1em;
   margin-right: 6.1em;
 }
+/* Posicion elementos menu*/
 .menu li {
   display: block;
   padding: 0.5em;
   margin-top: 5px;
   margin-left:1.5em;
 }
-
+/* Estilo relementos menu*/
 .menu li a {
   color: white;
   text-decoration: none;
@@ -292,14 +285,20 @@ footer .social-links {
 
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
-  
+    /* Agregando el cambio a color rojo cuando un elemento del menu es seleccionado.*/
+    nav li a:hover{
+      color:red;
+    }
+  /* Moviendo links redes sociales*/
   .social-links {
     margin-top: 0em;
     
   }
+  /* Tamaño formulario contact*/
   .contact{
     width:100%;
   }
+  /* Tamaño fuentes*/
   .big-hero p {
     font-size: 1em;
   }
@@ -312,27 +311,28 @@ footer .social-links {
   .about h2,.post h2{
     font-size: 2em;
   }
-
+/* Tmaño elementos formulario contact */
   input[type=text]{
 
     width:100%;
   }
-
+/* Tamaño y posicion links redes scoailes*/
   .fab{
     font-size:75px;
     margin-left: 20px;
     margin-right:20px;
   }
+  /* Tamaño y posicion flecha header*/
   .fas{
     font-size: 70px;
     margin-top:0.3em;
   }
-
+/* Cambiando estilo links en containers*/
   .container a{
     margin-top:1.5em;
     margin-bottom:3em;
   }
-
+/* Agrendo flex publicaciones*/
   .post ul {
     width: 100%;
     list-style: none;
@@ -340,33 +340,33 @@ footer .social-links {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-
+/* Cabiando tamaño de publicaciones*/
   .post ul li {
     min-height: 350px;
     max-height: 3500px;
     margin: 1rem 2rem;
     flex: 1 0 300px;
   }
-
+/* Cambiando tamaño titulo publicaciones*/
   .post ul li h3 {
     font-weight: bold;
     font-size: 2em;
   }
-
+/* Cambiando Tamaño logo principal*/
   .logo {
     width: 120px;
     margin-left:4.9em;
     margin-top:0;
   }
-
+/* Mostrar menu pc/tablet*/
   .show-desktop {
     display: block;
   }
-
+/* Esconder menu movil*/
   .hide-desktop {
     display: none;
   }
-
+/* Cambiando Estilo menu*/
   .menu {
     background-color: #112935;
     position: static;
@@ -379,22 +379,24 @@ footer .social-links {
     margin-top:0;
     padding:0;}
 
-   
 }
-
+/* Pesonalizando estilo para computadora*/
 @media only screen and (min-width: 1024px) {
-  /*TODO: FALTA CSS */
+  /* Cambiando tamaño boton formulario*/
   input[type=submit]{
 
     width:50%;
   }
+/* Cambiando tamaño letra publicaciones*/
   .post ul li p {
     font-size:1em;
   }
+/* Cambiando tamaño logo */  
   .logo {
     width: 150px;
     margin-top:0;
   }
+  /* Agregando grid a seccion acerca de */
   .about .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -405,9 +407,11 @@ footer .social-links {
     justify-items: center;
     align-items: center;
   }
+  /* Cambiando margen flecha header*/
   .fas{
       margin-top:0;
   }
+  /*Posicionando elementos de grid en seccion acerca de*/
   .about .container h2 {
 
     grid-column: 1/3;
@@ -423,19 +427,23 @@ footer .social-links {
   }
 }
 
+/* Pesonalizando estilo para computadora (Pantalla ancha)*/
 @media only screen and (min-width: 1440px) {
-  /*TODO: FALTA CSS */
+  /* Cambiando tamaño containers */
   .container {
     width: 100%;
     margin: 0 auto;
     max-width: 1440px;
   }
+  /* Cambiando tamaño logo seccion acerca de*/
   .about img{
     width:400px;
   }
+  /* Cambiando tamaño fotgrafia propietario*/
   .logo,.big-hero img {
     width: 200px;
   }
+  /* Cambiando tamaño titulos publicaciones */
   .post ul li h3 {
     font-weight: bold;
     font-size: 1.3em;
